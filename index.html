@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vinos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <script src="./js/java.js"></script>
+    <script defer src="js/dom.js"></script>
+  </head>
+  <body class="color-change-5x">
+    <header>
+      <h1>Cotización Vinos</h1>
+      <p class="vino">Aquí encontrarás la mas alta selección de vinos</p>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bodega</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  rolen="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tipos de vinos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cabernet Franc</a></li>
+                  <li><a class="dropdown-item" href="#">Malbec</a></li>
+                  <li><a class="dropdown-item" href="#">RedBlend</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Busqueda
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+   <div class="containerPadre">
+      <div class="container">
+        <div class="imgPadre">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./img/PREMIUM-MALBEC.png"
+                alt=""
+                loading="lazy"
+                alt=""
+                class="vino1"
+              />
+            </div>
+            <div class="card-name">Vino Malbec Cordoba</div>
+            <div class="card-price">$ 2500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="imag-2">
+            <div class="card-image">
+              <img
+                src="./img/gran-enemigo.png"
+                loading="lazy"
+                alt=""
+                class="vino2"
+              />
+            </div>
+            <div class="card-name">Vino Cabernet Franc El Gran Enemigo</div>
+            <div class="card-price">$ 4650</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="imag-3">
+            <div class="card-image">
+              <img
+                src="./img/reservabag.jpg"
+                loading="lazy"
+                alt=""
+                class="vino3"
+              />
+            </div>
+            <div class="card-name">Vino Malbec Reserva Bag</div>
+            <div class="card-price">$ 3500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container1">
+          <div class="imgPadre2">
+            <div class="imag-4">
+              <div class="card-image">
+                <img src="./img/mm.jpeg" loading="lazy" alt="" class="vino4" />
+              </div>
+              <div class="card-name">Vino Mosquita Muerta</div>
+              >
+              <div class="card-price">$ 4500</div>
+              <div class="card-button">
+                <button
+                  class="button button-outline button-add"
+                  id="idunico"
+                  title="Pulsa para agregar al carrito"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="imag-5">
+              <div class="card-image">
+                <img
+                  src="./img/SaintFelicien.jpeg"
+                  loading="lazy"
+                  alt=""
+                  class="vino5"
+                />
+              </div>
+              <div class="card-name">Vino SaintFelicien Malbec</div>
+              <div class="card-price">$ 2500</div>
+              <div class="card-button">
+                <button
+                  class="button button-outline button-add"
+                  id="idunico"
+                  title="Pulsa para agregar al carrito"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="imag-6">
+              <div class="card-image">
+                <img
+                  src="./img/rutini.jpeg"
+                  loading="lazy"
+                  alt=""
+                  class="vino6"
+                />
+              </div>
+              <div class="card-name">Vino Cabernet Rutini</div>
+              <div class="card-price">$ 3500</div>
+              <div class="card-button">
+                <button
+                  class="button button-outline button-add"
+                  id="idunico"
+                  title="Pulsa para agregar al carrito"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="imgPadre3">
+          <div class="img-7">
+            <div class="card-image">
+              <img
+                src="./img/torrentes.jpg"
+                loading="lazy"
+                alt=""
+                class="vino7"
+              />
+            </div>
+            <div class="card-name">Vino Blanco Gata Flora Torrontes</div>
+            <div class="card-price">$ 1500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="img-8">
+            <div class="card-image">
+              <img
+                src="./img/gradum-carmenere.png"
+                loading="lazy"
+                alt=""
+                class="vino8"
+              />
+            </div>
+            <div class="card-name">Vino Vistades Gradum Carmenere</div>
+            <div class="card-price">$ 2800</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="img-9">
+            <div class="card-image">
+              >
+              <img
+                src="./img/castizo.jpg"
+                loading="lazy"
+                alt=""
+                class="vino9"
+              />
+            </div>
+            <div class="card-name">Vino Cabernet Franc Castizo</div>
+            <div class="card-price">$ 1800</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="imgPadre4">
+          <div class="img-10">
+            <div class="card-image">
+              <img
+                src="./img/mara-cabernet-franc.png"
+                loading="lazy"
+                alt=""
+                class="vino10"
+              />
+            </div>
+            <div class="card-name">Vino Cabernet Franc Ernesto Catena</div>
+            <div class="card-price">$ 2500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="img-11">
+            <div class="card-image">
+              <img
+                src="./img/esteco.jpeg"
+                loading="lazy"
+                alt=""
+                class="vino11"
+              />
+            </div>
+            <div class="card-name">Vino Cabernet Sauvignon El Esteco</div>
+            <div class="card-price">$ 2500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="img-12">
+            <div class="card-image">
+              <img
+                src="./img/almanegra.jpeg"
+                loading="lazy"
+                alt=""
+                class="vino12"
+              />
+            </div>
+            <div class="card-name">Vino RedBlend Alma Negra</div>
+            <div class="card-price">$ 4500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container4">
+        <div class="imgPadre5">
+          <div class="img-13">
+            <div class="card-image">
+              <img
+                src="./img/andeluna-elevacion.jpg"
+                loading="lazy"
+                alt=""
+                class="vino13"
+              />
+            </div>
+            <div class="card-name">Vino RedBlend Andeluna Elevación"</div>
+            <div class="card-price">$ 2500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="img-14">
+            <div class="card-image">
+              <img
+                src="./img/cocodrilo.jpg"
+                loading="lazy"
+                alt=""
+                class="vino14"
+              />
+            </div>
+            <div class="card-name">Vino RedBlend Cocodrilo</div>
+            <div class="card-price">$ 2500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="img-15">
+            <div class="card-image">
+              <img
+                src="./img/rutinibblanc.jpeg"
+                loading="lazy"
+                alt=""
+                class="vino15"
+              />
+            </div>
+            <div class="card-name">Vino Rutini Blanc</div>
+            <div class="card-price">$ 2500</div>
+            <div class="card-button">
+              <button
+                class="button button-outline button-add"
+                id="idunico"
+                title="Pulsa para agregar al carrito"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerPadre">
+        <div class="instagram">
+          <img
+            src="./img/logotipo-de-instagram.png"
+            loading="lazy"
+            alt=""
+            class="instagram1"
+          />
+        </div>
+        <div class="facebook">
+          <img
+            src="./img/facebook (1).png"
+            loading="lazy"
+            alt=""
+            class="facebook1"
+          />
+        </div>
+        <div class="twitter">
+          <img
+            src="./img/signo-de-twitter.png"
+            loading="lazy"
+            alt=""
+            class="twitter1"
+          />
+        </div>
+        <div class="telegram">
+          <img src="./img/telegrama (1).png" alt="" class="telegram1" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
